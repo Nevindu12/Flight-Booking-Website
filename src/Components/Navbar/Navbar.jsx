@@ -8,6 +8,7 @@ import { CgMenuGridO } from 'react-icons/cg'
 import logo from '../../assets/logo.png'
 
 const Navbar = () => {
+
     const [active, setActive] = useState('navBarMenu')
     const showNavBar = ()=> {
         setActive('navBarMenu showNavBar')
@@ -18,8 +19,6 @@ const Navbar = () => {
     }
     
     
-
-
     return (
         <div className='navBar flex'>
 
