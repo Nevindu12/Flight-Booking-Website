@@ -9,6 +9,7 @@ import logo from '../../assets/logo.png'
 
 const Navbar = () => {
 
+    //remove navbar in small width
     const [active, setActive] = useState('navBarMenu')
     const showNavBar = ()=> {
         setActive('navBarMenu showNavBar')
@@ -17,6 +18,21 @@ const Navbar = () => {
     const removeNavBar = ()=> {
         setActive('navBarMenu')
     }
+
+
+    //add background color for toggle
+    const [noBg, addBg] = useState('navBarTwo')
+
+    const addBgColor = ()=> {
+        if(window.scrollY >= 10) {
+            addBg('navBarTwo navbar_With_Bg')
+        }else {
+            addBg('navBarTwo')
+
+        }
+    }
+    window.addEventListener('scroll', addBgColor)
+    
     
     
     return (
@@ -40,7 +56,7 @@ const Navbar = () => {
 
             </div>
 
-            <div className="navBarTwo flex">
+            <div className={noBg}>
             
                 <div className="logoDiv">
                     <img src={logo} className='Logo' />
@@ -48,12 +64,11 @@ const Navbar = () => {
 
                 <div className={active}>
                     <ul className="menu flex">
-                        <li onClick={removeNavBar} className="listItem">About</li>
+                        <li onClick={removeNavBar} className="listItem">Home</li>
                         <li onClick={removeNavBar} className="listItem">About</li>
                         <li onClick={removeNavBar} className="listItem">Offers</li>
                         <li onClick={removeNavBar} className="listItem">Seats</li>
                         <li onClick={removeNavBar} className="listItem">Destinations</li>
-                        <li onClick={removeNavBar} className="listItem">Home</li>
                     </ul>
 
                     <button onClick={removeNavBar} className='btn flex btnOne'>Contact</button>
