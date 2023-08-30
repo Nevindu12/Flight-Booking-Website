@@ -116,7 +116,6 @@ h2 {
 
 
 //navbar section
-
 .navBar {
     position: fixed;
     flex-direction: column;
@@ -233,7 +232,6 @@ h2 {
 }
 
 //home section
-
 .home {
     padding-top: 10rem;
     text-align: center;
@@ -273,7 +271,6 @@ h2 {
 }
 
 //search section
-
 .search {
     .sectionContainer {
         width: 100%;
@@ -357,7 +354,6 @@ h2 {
 }
 
 //support section
-
 .support {
     .sectionContainer {
         .titlesDiv {
@@ -413,7 +409,6 @@ h2 {
 }
 
 //info section
-
 .info {
     background: var(--secondaryColor);
     .infoContainer {
@@ -464,6 +459,37 @@ h2 {
 
                 .colorTwo {
                     background: var(--colorTwo);
+                }
+            }
+        }
+    }
+}
+
+//Lounge section
+.lounge {
+    .sectionContainer {
+        gap: 1.5rem;
+
+        .imgDiv {
+            margin: auto;
+            img {
+                width: 100%;
+                max-width: 430px;
+            }
+        }
+
+        .textDiv {
+            .grids {
+                margin-top: 1rem;
+                gap: 1.5rem;
+
+                .singleGrid {
+                    .gridTitle {
+                        display: block;
+                        padding-bottom: .5rem;
+                        font-weight: 500;
+                        color: var(--blackColor);
+                    }
                 }
             }
         }
