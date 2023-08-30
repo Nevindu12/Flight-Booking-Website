@@ -21,7 +21,8 @@ const Travelers = () => {
                                 <img src={traveler1} className='travelerImage'/>
                             </div>
                             <div className="travelerName">
-                                <span>IsraTech</span>@isratech8
+                                <span>IsraTech</span>
+                                <p>@isratech8</p>
                             </div>
                         </div>
                     </div>
