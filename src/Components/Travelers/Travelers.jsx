@@ -1,7 +1,9 @@
 import React from 'react'
 
+//import destination image
 import paris from '../../assets/paris.jpg'
 
+//import traveler image
 import traveler1 from '../../assets/user1.jpg'
 
 const Travelers = () => {
@@ -23,7 +25,7 @@ const Travelers = () => {
                             </div>
                         </div>
                     </div>
-                    
+
                 </div>
             </div>
         </div>
