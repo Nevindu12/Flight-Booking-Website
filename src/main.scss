@@ -276,19 +276,19 @@ h2 {
         width: 100%;
         padding: 1.5rem;
         border: 2px solid var(--grayText);
-        border-radius: 10px;
+        border-radius: 16px;
         row-gap: 2rem;
 
         .btns {
             background: var(--secondaryColor);
-            padding-block-end: .5rem;
+            padding: .5rem;
             border-radius: 1rem;
             flex-direction: column;
             width: 100%;
             margin: auto;
 
             .singleBtn {
-                padding: .8rem;
+                padding: .8rem 1.5rem;
                 font-size: 13px;
                 border-radius: 3rem;
                 width: 80%;
@@ -298,7 +298,7 @@ h2 {
                 &:hover {
                     background: var(--primaryColor);
                     color: var(--whiteColor);
-                    font-weight: 5em;
+                    font-weight: 500;
                     transition: .4s ease;
                 }
             }
@@ -1210,4 +1210,19 @@ h2 {
             }
         }
     }
+}
+
+::selection {
+    background: var(--primaryColor);
+    color: var(--whiteColor);
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: var(--greyBg);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primaryColor);
+    border-radius: 10px;
 }
