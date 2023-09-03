@@ -115,7 +115,7 @@ h2 {
 }
 
 
-//navbar section
+//Navbar section
 .navBar {
     position: fixed;
     flex-direction: column;
@@ -231,7 +231,7 @@ h2 {
     }
 }
 
-//home section
+//Home section
 .home {
     padding-top: 10rem;
     text-align: center;
@@ -270,7 +270,7 @@ h2 {
     }
 }
 
-//search section
+//Search section
 .search {
     .sectionContainer {
         width: 100%;
@@ -353,7 +353,7 @@ h2 {
     }
 }
 
-//support section
+//Support section
 .support {
     .sectionContainer {
         .titlesDiv {
@@ -408,7 +408,7 @@ h2 {
     }
 }
 
-//info section
+//Info section
 .info {
     background: var(--secondaryColor);
     .infoContainer {
@@ -601,7 +601,7 @@ h2 {
     }
 }
 
-//subscribe section
+//Subscribe section
 .subscribe {
     background: var(--secondaryColor);
 
@@ -629,6 +629,82 @@ h2 {
                 width: 100%;
             }
         }
+    }
+}
+
+//Footer section
+.footer {
+    background: var(--secondaryColor);
+
+    .sectionContainer {
+        gap: 2.5rem;
+
+        .gridOne {
+            gap: 1rem;
+            justify-content: center;
+            margin: auto;
+
+            .logoDiv {
+                .Logo {
+                    width: 20%;
+                }
+            }
+
+            .socialIcon {
+                margin-top: 1rem;
+                gap: 1rem;
+
+                .icon {
+                    height: 50px;
+                    width: 30px;
+                    border-radius: 10rem;
+                    border: 1px solid var(--borderColor);
+                    box-shadow: var(--boxShadow);
+                    padding: .4rem;
+                    color: var(--grayText);
+
+                    &:hover {
+                        background: var(--primaryColor);
+                        transform: translateY(-7px);
+                        transition: var(--transition);
+                        border: 1px solid var(--primaryColor);
+                        color: var(--whiteColor);
+                    }
+                }
+            }
+        }
+
+        .footerLinks {
+            display: grid;
+
+            .linkTitle {
+                color: var(--blackColor);
+                font-weight: 500;
+                display: block;
+                padding-bottom: 1rem;
+            }
+
+            li a {
+                display: block;
+                columns: var(--grayText);
+                transition: var(--transition);
+                padding: .3rem 0;
+
+                &:hover {
+                    transform: translateX(7px);
+                    color: var(--primaryColor);
+                }
+            }
+        }
+    }
+
+    .copyRightDiv {
+        justify-content: center;
+        margin-top: 1.5rem;
+        padding: 1rem;
+        gap: 1rem;
+        border-top: 1px solid var(--grayText);
+        text-align: center;
     }
 }
 
