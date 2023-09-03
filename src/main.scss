@@ -264,8 +264,8 @@ h2 {
         .plane {
             position: absolute;
             width: 100%;
-            top: -30%;
-            left: -5%;
+            top: 5%;
+            left: -15%;
         }
     }
 }
@@ -293,6 +293,7 @@ h2 {
                 border-radius: 3rem;
                 width: 80%;
                 text-align: center;
+                cursor: pointer;
 
                 &:hover {
                     background: var(--primaryColor);
@@ -349,6 +350,10 @@ h2 {
                     }
                 }
             }
+
+            .btnBlock {
+                justify-content: center;
+            }
         }
     }
 }
@@ -399,6 +404,7 @@ h2 {
 
             .imgDiv {
                 margin: auto;
+
                 img {
                     width: 100%;
                     max-width: 420px;
@@ -411,6 +417,7 @@ h2 {
 //Info section
 .info {
     background: var(--secondaryColor);
+
     .infoContainer {
         .titleDiv {
             flex-direction: column;
@@ -472,6 +479,7 @@ h2 {
 
         .imgDiv {
             margin: auto;
+
             img {
                 width: 100%;
                 max-width: 430px;
@@ -515,7 +523,9 @@ h2 {
                 gap: 1rem;
                 margin: auto;
 
-                .destinationImage, .travelerImage, .travelerName {
+                .destinationImage,
+                .travelerImage,
+                .travelerName {
                     position: absolute;
                 }
 
@@ -541,13 +551,16 @@ h2 {
                     transition: var(--transition);
                     animation: animate 2.3s infinite;
                 }
+
                 @keyframes animate {
                     0% {
                         transform: translateY(0px);
                     }
+
                     50% {
                         transform: translateY(8px);
                     }
+
                     100% {
                         transform: translateY(0px);
                     }
@@ -573,13 +586,16 @@ h2 {
                         font-style: italic;
                     }
                 }
+
                 @keyframes animatedBirders {
                     0% {
                         border-radius: 0rem;
                     }
+
                     50% {
                         border-radius: 2rem;
                     }
+
                     100% {
                         border-radius: 0rem;
                     }
@@ -607,6 +623,7 @@ h2 {
 
     .sectionContainer {
         text-align: center;
+
         .inputDiv {
             margin-top: 1rem;
             flex-direction: column;
@@ -708,3 +725,489 @@ h2 {
     }
 }
 
+
+//Add media tags
+@media screen and (min-width: 482px) {
+    .home {
+        padding-top: 12rem;
+    }
+
+    .search {
+        .sectionContainer {
+            .searchInputs {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    .travelers {
+        .sectionContainer {
+            .travelersContainer {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    .subscribe {
+        .sectionContainer {
+            max-width: 80%;
+            margin: auto;
+
+            .inputDiv {
+                flex-direction: row;
+                padding: 0 .5rem;
+                border-radius: 3rem;
+            }
+        }
+    }
+
+    .footer {
+        .sectionContainer {
+            align-items: flex-start;
+            grid-template-columns: repeat(2, 1fr);
+
+            .footerLinks {
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 570px) {
+    .home {
+        .mainText {
+            width: 80%;
+        }
+
+        .homeImages {
+            .video {
+                border-radius: 15rem;
+            }
+
+            .plane {
+                position: absolute;
+                width: 95%;
+                // top: 8%;
+            }
+        }
+    }
+
+    .search {
+        .sectionContainer {
+            .btns {
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+        }
+    }
+
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                .textDiv {
+                    margin-top: 2rem;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    .info {
+        .infoContainer {
+            .titleDiv {
+                flex-direction: row;
+
+                h2 {
+                    text-align: left;
+                    max-width: 500px;
+                }
+            }
+
+            .cardsDiv {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    }
+
+    .lounge {
+        .sectionContainer {
+            .textDiv {
+                .grids {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        .sectionContainer {
+            .inputDiv {
+                justify-content: space-between;
+
+                .btn {
+                    max-width: max-content;
+                }
+            }
+        }
+    }
+
+    .footer {
+        .sectionContainer {
+            padding-top: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 680px) {
+    .home {
+        .mainText {
+            width: 80%;
+        }
+
+        .homeImages {
+            .videoDiv {
+                width: 80%;
+
+                .video {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15rem;
+                }
+            }
+
+            .plane {
+                width: 85%;
+                left: -5%;
+                top: 5%;
+            }
+        }
+    }
+
+    .search {
+        .sectionContainer {
+            .btn {
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+
+            .searchInputs {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+
+    .footer {
+        .sectionContainer {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .navBar {
+        align-items: center;
+
+        .navBarOne {
+            .none {
+                display: flex;
+                gap: 1.5rem;
+
+                li {
+                    font-size: 13px;
+                    gap: .5rem;
+                    color: var(--textColor);
+
+                    &:hover {
+                        color: var(--primaryColor);
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+
+        .navBarTwo {
+            justify-content: space-between;
+            align-items: center;
+
+            .logoDiv {
+                .Logo {
+                    max-width: 20%;
+                }
+            }
+
+            .menu {
+                flex-direction: row;
+                gap: .5rem;
+
+                .listItem {
+                    padding: 0 .5rem;
+                    font-size: 14px;
+                    cursor: pointer;
+                    color: var(--textColor);
+                    font-weight: 700;
+
+                    &:hover {
+                        color: var(--primaryColor);
+                        font-weight: 700;
+                    }
+                }
+            }
+
+            .btnOne,
+            .toggleIcon {
+                display: none;
+            }
+        }
+    }
+
+    .search {
+        .sectionContainer {
+            .btns {
+                width: 70%;
+                border-radius: 3rem;
+                flex-direction: row;
+            }
+
+            .searchInputs {
+                grid-template-columns: repeat(4, 1fr);
+            }
+        }
+    }
+
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 2rem;
+                margin-top: 5rem;
+
+                .textDiv {
+                    margin-top: 0rem;
+                    grid-template-columns: repeat(1, 1fr);
+                }
+            }
+        }
+    }
+
+    .info {
+        .infoContainer {
+            padding: 0 6rem;
+
+            .titleDiv {
+                width: 90%;
+                margin: auto;
+                align-items: center;
+            }
+
+            .cardsDiv {
+                grid-template-columns: repeat(3, 1fr);
+
+                .singleCard {
+                    max-width: 260px;
+                    padding: 3rem 1rem;
+                }
+            }
+        }
+    }
+
+    .lounge {
+        .sectionContainer {
+            grid-template-columns: repeat(2, 1fr);
+            .textDiv {
+                grid-area: 1;
+                .grids {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    .travelers {
+        .sectionContainer {
+            .travelersContainer {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .home {
+        padding-top: 13rem;
+        .mainText {
+            width: 70%;
+            padding-bottom: 1.5rem;
+            font-size: 22px;
+            line-height: 4rem;
+        }
+    }
+
+    .search {
+        .sectionContainer {
+            .searchInputs {
+                grid-template-columns: repeat(5, 1fr);
+            }
+        }
+    }
+
+    .travelers {
+        .sectionContainer {
+            .travelersContainer {
+                grid-template-columns: repeat(4, 1fr);
+                margin: 3rem 0;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    p {
+        font-size: 15px;
+        line-height: 25px;
+    }
+    
+    h4 {
+        font-size: 20px;
+    }
+    
+    h2 {
+        font-size: 27px;
+    }
+
+    .section {
+        padding: 6rem 0 4rem;
+    }
+    
+    .container {
+        width: 75%;
+        margin: auto;
+    }
+
+    .navBar {
+        .navBarOne, .navBarTwo {
+            padding: 1.5rem 5rem;
+        }
+
+        .navbar_With_Bg {
+            padding: 0 5rem;
+        }
+    }
+
+    .home {
+        .mainText {
+            width: 60%;
+            font-size: 25px;
+            line-height: 4rem;
+        }
+
+        .homeImages {
+            .videoDiv {
+                width: 90%;
+                height: 300px;
+
+                .video {
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    border-radius: 15rem;
+                }
+            }
+
+            .plane {
+                width: 100%;
+                left: -15%;
+                top: 3%;
+            }
+        }
+    }
+
+    .search {
+        .sectionContainer {
+            .btns {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1106px) {
+    .subscribe {
+        .sectionContainer {
+            max-width: 60%;
+        }
+    }
+}
+
+@media screen and (min-width: 1332px) {
+    .navBar {
+        .navBarOne {
+            .menu {
+                gap: 1rem;
+
+                .listItem {
+                    padding: 0 1.5rem;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    .home {
+        .homeImages {
+            .plane {
+                width: 105%;
+                top: -20%;
+                left: -15%;
+            }
+        }
+    }
+
+    .support {
+        .sectionContainer {
+            .infoDiv {
+                gap: 1rem;
+                .textDiv {
+                    .singleInfo {
+                        p {
+                            max-width: 500px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .subscribe {
+        .sectionContainer {
+            max-width: 50%;
+        }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .home {
+        .mainText {
+            width: 80%;
+        }
+
+        .homeImages {
+            .videoDiv {
+                width: 80%;
+
+                .video {
+                    height: 100%;
+                    width: 100%;
+                    border-radius: 15rem;
+                }
+            }
+
+            .plane {
+                width: 85%;
+                left: -5%;
+                top: -10%;
+            }
+        }
+    }
+}
